@@ -7,7 +7,7 @@ import java.util.*;
         System.out.println("msg:"  + msg );
         try
         {
-            Thread.sleep(1000);
+            Thread.sleep(500);
         }
         catch (Exception e)
         {
@@ -37,7 +37,7 @@ class ThreadSend extends Thread
     public static void main(String args[])
     {
     	inventory send = new inventory();
-        ThreadSend t1 = new ThreadSend( " My name is Tooba " , send );
+        ThreadSend t1 = new ThreadSend( " My nickname is Tooba " , send );
         ThreadSend t2 = new ThreadSend( " Daughter of Ashraf " , send );
   
         t1.start();
